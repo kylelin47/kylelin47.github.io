@@ -1,0 +1,23 @@
+{
+  "name": "kylelin47.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kylelin47/kylelin47.github.io",
+  "authors": [
+    "Kyle Lin <kylelin47@gmail.com>"
+  ],
+  "description": "Personal webpage",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mprogress": "~0.1.1"
+  }
+}

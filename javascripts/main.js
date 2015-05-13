@@ -1,1 +1,8 @@
-console.log('This would be the main JS file.');
+(function(){
+    var mp = new Mprogress({
+      template: 2,
+      start: true,
+      parent: '#customContainer'
+    });
+    //var mp2 = new Mprogress('start');
+}())
