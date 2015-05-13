@@ -4,6 +4,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     concat: {
+      jquery: {
+        files: {
+          'javascripts/jquery.min.js': ['bower_components/jquery/dist/jquery.min.js']
+        }
+      },
       mprogress: {
         files: {
           'javascripts/mprogress.min.js': ['bower_components/mprogress/mprogress.min.js'],
@@ -17,14 +22,14 @@ module.exports = function(grunt) {
         directory: 'bower_components'
       },
       'prod': {
-          options: {
-              production: true
-          }
+        options: {
+          production: true
+        }
       },
       'dev': {
-          options: {
-              production: false
-          }
+        options: {
+          production: false
+        }
       }
     }
   });
