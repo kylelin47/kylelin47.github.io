@@ -27,7 +27,7 @@
           <a id="forkme_banner" href="https://github.com/kylelin47/kylelin47.github.io">View on GitHub</a>
 
           <h1 id="project_title">Kyle&#39;s Personal Webpage</h1>
-          <h2 id="project_tagline">nothing important is here</h2>
+          <h2 id="project_tagline">nothing important is here, just tinkering around</h2>
 
         </header>
     </div>
@@ -36,16 +36,19 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner" data-ng-controller="MainController">
         <div>
-          <a href="" data-ng-click="display = DISPLAY_TYPE.MAIN">main</a>
-          <a href="" data-ng-click="display = DISPLAY_TYPE.JS">js</a>
-          <a href="" data-ng-click="display = DISPLAY_TYPE.CSS">css</a>
-          <a href="game.html">game</a>
+          <a href="" data-ng-click="display = DISPLAY_TYPE.MAIN" data-ng-show="display != DISPLAY_TYPE.MAIN">main</a>
+          <span data-ng-show="display == DISPLAY_TYPE.MAIN">main</span> | 
+          <a href="" data-ng-click="display = DISPLAY_TYPE.JS" data-ng-show="display != DISPLAY_TYPE.JS">js</a>
+          <span data-ng-show="display == DISPLAY_TYPE.JS">js</span> | 
+          <a href="" data-ng-click="display = DISPLAY_TYPE.CSS" data-ng-show="display != DISPLAY_TYPE.CSS">css</a>
+          <span data-ng-show="display == DISPLAY_TYPE.CSS">css</span> | 
+          <a href="game.html" target="_blank">game</a>
         </div>
 
         <span data-ng-if="display == DISPLAY_TYPE.MAIN">
           <h2>What This Is</h2>
           <p>Playing around with various JS/CSS stuff and learning how to publish it to a website.</p>
-          <p>Primarly concerned with Bower, Grunt, etc.</p>
+          <p>Primarly concerned with Bower, Grunt, Angular, etc. Maybe some HTML5 game making.</p>
         </span>
 
         <span data-ng-show="display == DISPLAY_TYPE.JS">
@@ -74,7 +77,6 @@
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-  <script src='http://cdn.html5quintus.com/v0.2.0/quintus-all.min.js'></script>
   <script src='javascripts/mprogress.min.js'></script>
   <script src='javascripts/main.js'></script>
   </body>
