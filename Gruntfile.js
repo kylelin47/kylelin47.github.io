@@ -16,6 +16,11 @@ module.exports = function(grunt) {
         }
       }
     },
+    serve: {
+      options: {
+          port: 3000
+      }
+    },
     'bower-install-simple': {
       options: {
         color: true,
@@ -35,11 +40,11 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks("grunt-bower-install-simple");
+  grunt.loadNpmTasks('grunt-bower-install-simple');
+  grunt.loadNpmTasks('grunt-serve');
 
   grunt.registerTask('default', [
-    'bower-install-simple',
-    'concat'
+    'serve'
   ]);
 
   grunt.registerTask('bower', [
