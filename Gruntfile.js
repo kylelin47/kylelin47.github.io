@@ -15,12 +15,27 @@ module.exports = function(grunt) {
       options: {
         color: true,
         directory: 'bower_components'
+      },
+      'prod': {
+          options: {
+              production: true
+          }
+      },
+      'dev': {
+          options: {
+              production: false
+          }
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks("grunt-bower-install-simple");
+
+  grunt.registerTask('default', [
+    'bower-install-simple',
+    'concat'
+  ]);
 
   grunt.registerTask('bower', [
     'bower-install-simple',
