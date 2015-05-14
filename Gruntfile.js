@@ -14,6 +14,13 @@ module.exports = function(grunt) {
           'javascripts/mprogress.min.js': ['bower_components/mprogress/mprogress.min.js'],
           'stylesheets/mprogress.min.css': ['bower_components/mprogress/mprogress.min.css']
         }
+      },
+      bootstrap: {
+        files: {
+          'javascripts/bootstrap.min.js': ['bower_components/bootstrap/dist/js/bootstrap.min.js'],
+          'stylesheets/bootstrap.min.css': ['bower_components/bootstrap/dist/css/bootstrap.min.css'],
+          'stylesheets/bootstrap-theme.min.css': ['bower_components/bootstrap/dist/css/bootstrap-theme.min.css']
+        }
       }
     },
     serve: {
