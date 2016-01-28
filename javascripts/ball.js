@@ -5,8 +5,8 @@ window.addEventListener("load",function() {
   // the `Sprites` module, and then call setup to create a
   // canvas element on the page. If you already have a 
   // canvas element in your page, you can pass the element
-  // or it's id as the first parameter to set up as well.
-  var Q = window.Q =  Quintus().include("Sprites").setup({ width: 400, height: 400 });
+  // or its id as the first parameter to set up as well.
+  var Q = window.Q =  Quintus().include("Sprites").setup("myGame");
 
   // The `MovingSprite` class is a descendant of the base `Sprite` class,
   // all it does is add in a step method to Sprite that runs the standard
