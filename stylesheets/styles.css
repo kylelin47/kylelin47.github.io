@@ -186,7 +186,7 @@ hr {
   margin:0 0 20px;
 }
 
-footer {
+footer.attribution {
   width:270px;
   float:left;
   position:fixed;
@@ -201,7 +201,7 @@ footer {
     margin:0;
   }
 
-  header, section, footer {
+  header, section, footer.attribution {
     float:none;
     position:static;
     width:auto;
